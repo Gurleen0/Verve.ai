@@ -1,4 +1,3 @@
-
 import { AnalysisResult } from '@/components/AnalysisResults';
 
 // Mock data for previous journal entries
@@ -270,12 +269,12 @@ const generateInsights = (text: string, emotions: ReturnType<typeof analyzeEmoti
   }
   
   if (emotions.primary.toLowerCase() === 'hope' || emotions.secondary.toLowerCase() === 'hope') {
-    insights.push('The hopeful tone in your writing suggests you're finding new possibilities even amid challenges.');
+    insights.push('The hopeful tone in your writing suggests you are finding new possibilities even amid challenges.');
   }
   
   // Based on keyword patterns
   if (keywords.some(k => k.toLowerCase() === 'change' || k.toLowerCase() === 'direction')) {
-    insights.push('You're contemplating change or new directions. This period of reflection can lead to meaningful growth.');
+    insights.push('You are contemplating change or new directions. This period of reflection can lead to meaningful growth.');
   }
   
   if (keywords.some(k => k.toLowerCase() === 'goal' || k.toLowerCase() === 'purpose')) {
@@ -311,7 +310,7 @@ const generateInsights = (text: string, emotions: ReturnType<typeof analyzeEmoti
     'Consider how your current challenges are shaping your growth journey.',
     'What small daily practice might help you reconnect with your purpose?',
     'Your writing reveals thoughtfulness and self-awareness.',
-    'The themes in your journal suggest you're navigating a significant transition period.',
+    'The themes in your journal suggest you are navigating a significant transition period.',
     'How might you reframe challenges as opportunities for learning?',
     'Your reflective practice is building valuable self-knowledge.',
     'Notice how your energy shifts when writing about different aspects of your life.'
